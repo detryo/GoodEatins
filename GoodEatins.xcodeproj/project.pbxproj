@@ -16,6 +16,7 @@
 		36A24096246C49220020E0CD /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A24095246C49220020E0CD /* FoodCategory.swift */; };
 		36A24098246C49810020E0CD /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A24097246C49810020E0CD /* Recipe.swift */; };
 		36A2409A246C49EE0020E0CD /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A24099246C49EE0020E0CD /* DataSet.swift */; };
+		36D46B9D246D59F400DFD385 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D46B9C246D59F400DFD385 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		36A24095246C49220020E0CD /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
 		36A24097246C49810020E0CD /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		36A24099246C49EE0020E0CD /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		36D46B9C246D59F400DFD385 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,6 @@
 				36A24094246C48F40020E0CD /* Controllers */,
 				36A2407E246C48AD0020E0CD /* AppDelegate.swift */,
 				36A24080246C48AD0020E0CD /* SceneDelegate.swift */,
-				36A24082246C48AD0020E0CD /* ViewController.swift */,
 				36A24084246C48AD0020E0CD /* Main.storyboard */,
 				36A24087246C48AF0020E0CD /* Assets.xcassets */,
 				36A24089246C48AF0020E0CD /* LaunchScreen.storyboard */,
@@ -89,6 +90,7 @@
 		36A24093246C48F00020E0CD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				36D46B9C246D59F400DFD385 /* CategoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +98,7 @@
 		36A24094246C48F40020E0CD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				36A24082246C48AD0020E0CD /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				36A2409A246C49EE0020E0CD /* DataSet.swift in Sources */,
 				36A24083246C48AD0020E0CD /* ViewController.swift in Sources */,
 				36A2407F246C48AD0020E0CD /* AppDelegate.swift in Sources */,
+				36D46B9D246D59F400DFD385 /* CategoryCell.swift in Sources */,
 				36A24081246C48AD0020E0CD /* SceneDelegate.swift in Sources */,
 				36A24096246C49220020E0CD /* FoodCategory.swift in Sources */,
 				36A24098246C49810020E0CD /* Recipe.swift in Sources */,
