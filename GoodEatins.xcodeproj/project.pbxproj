@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36A17559246EE18C00371EE1 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A17558246EE18C00371EE1 /* RecipeCell.swift */; };
 		36A2407F246C48AD0020E0CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A2407E246C48AD0020E0CD /* AppDelegate.swift */; };
 		36A24081246C48AD0020E0CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A24080246C48AD0020E0CD /* SceneDelegate.swift */; };
 		36A24083246C48AD0020E0CD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A24082246C48AD0020E0CD /* HomeVC.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36A17558246EE18C00371EE1 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		36A2407B246C48AD0020E0CD /* GoodEatins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodEatins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A2407E246C48AD0020E0CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36A24080246C48AD0020E0CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				36D46B9C246D59F400DFD385 /* CategoryCell.swift */,
+				36A17558246EE18C00371EE1 /* RecipeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				36A2409A246C49EE0020E0CD /* DataSet.swift in Sources */,
 				36A24083246C48AD0020E0CD /* HomeVC.swift in Sources */,
 				36A2407F246C48AD0020E0CD /* AppDelegate.swift in Sources */,
+				36A17559246EE18C00371EE1 /* RecipeCell.swift in Sources */,
 				36D46B9D246D59F400DFD385 /* CategoryCell.swift in Sources */,
 				36A24081246C48AD0020E0CD /* SceneDelegate.swift in Sources */,
 				36D46B9F246D66FB00DFD385 /* RecipesSelectionVC.swift in Sources */,

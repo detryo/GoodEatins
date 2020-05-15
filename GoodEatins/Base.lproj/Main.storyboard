@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -80,14 +81,60 @@
                     <view key="view" contentMode="scaleToFill" id="d4m-OD-2d3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D1R-20-wqv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B3i-Hv-Atk">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeCell" id="U8e-rC-A2X" customClass="RecipeCell" customModule="GoodEatins" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yIM-0t-D4g">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger2" translatesAutoresizingMaskIntoConstraints="NO" id="Oxw-2p-t2U">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Oxw-2p-t2U" secondAttribute="bottom" id="4TY-cU-suF"/>
+                                                <constraint firstItem="Oxw-2p-t2U" firstAttribute="leading" secondItem="yIM-0t-D4g" secondAttribute="leading" id="57I-Cd-QJa"/>
+                                                <constraint firstAttribute="trailing" secondItem="Oxw-2p-t2U" secondAttribute="trailing" id="KSh-dC-Jkj"/>
+                                                <constraint firstItem="Oxw-2p-t2U" firstAttribute="top" secondItem="yIM-0t-D4g" secondAttribute="top" id="ftS-KJ-eLh"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="150" height="150"/>
+                                        <connections>
+                                            <outlet property="recipeImage" destination="Oxw-2p-t2U" id="qyY-EH-0uE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="D1R-20-wqv" firstAttribute="leading" secondItem="B1m-Qr-xIr" secondAttribute="leading" id="8Jq-Ui-GGg"/>
+                            <constraint firstItem="D1R-20-wqv" firstAttribute="top" secondItem="B1m-Qr-xIr" secondAttribute="top" id="AFh-g9-t2U"/>
+                            <constraint firstItem="D1R-20-wqv" firstAttribute="trailing" secondItem="B1m-Qr-xIr" secondAttribute="trailing" id="L93-Tz-vHp"/>
+                            <constraint firstAttribute="bottom" secondItem="D1R-20-wqv" secondAttribute="bottom" id="UEn-ow-7t8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="B1m-Qr-xIr"/>
                     </view>
                     <navigationItem key="navigationItem" id="Z0a-hV-bCu"/>
+                    <connections>
+                        <outlet property="collectionView" destination="D1R-20-wqv" id="7nx-G8-frf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="krK-cv-m8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="100"/>
+            <point key="canvasLocation" x="1857.9710144927537" y="99.776785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IwS-RT-Hwd">
@@ -110,5 +157,6 @@
     </scenes>
     <resources>
         <image name="burger0" width="1052" height="699"/>
+        <image name="burger2" width="635" height="948"/>
     </resources>
 </document>
