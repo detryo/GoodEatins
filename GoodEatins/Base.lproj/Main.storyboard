@@ -130,11 +130,63 @@
                     <navigationItem key="navigationItem" id="Z0a-hV-bCu"/>
                     <connections>
                         <outlet property="collectionView" destination="D1R-20-wqv" id="7nx-G8-frf"/>
+                        <segue destination="klJ-P2-3zd" kind="show" identifier="ToRecipeSelection" id="m0M-Of-wgr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="krK-cv-m8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1857.9710144927537" y="99.776785714285708"/>
+        </scene>
+        <!--Recipe DetailVC-->
+        <scene sceneID="8AS-rL-1vp">
+            <objects>
+                <viewController id="klJ-P2-3zd" customClass="RecipeDetailVC" customModule="GoodEatins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="paz-9u-JmB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pasta1" translatesAutoresizingMaskIntoConstraints="NO" id="J8Y-H1-SAf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="nxT-rw-GU9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pasta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G3J-H6-1N3">
+                                <rect key="frame" x="180.5" y="343" width="53" height="29"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oon-fD-UQG">
+                                <rect key="frame" x="20" y="390" width="374" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oon-fD-UQG" firstAttribute="leading" secondItem="9u4-Kx-JzA" secondAttribute="leading" constant="20" id="9Qu-5w-ihs"/>
+                            <constraint firstItem="oon-fD-UQG" firstAttribute="top" secondItem="G3J-H6-1N3" secondAttribute="bottom" constant="18" id="EKR-0D-F8D"/>
+                            <constraint firstItem="J8Y-H1-SAf" firstAttribute="leading" secondItem="9u4-Kx-JzA" secondAttribute="leading" id="G5W-Iz-4J5"/>
+                            <constraint firstItem="J8Y-H1-SAf" firstAttribute="top" secondItem="9u4-Kx-JzA" secondAttribute="top" id="GDe-wg-izf"/>
+                            <constraint firstItem="G3J-H6-1N3" firstAttribute="top" secondItem="J8Y-H1-SAf" secondAttribute="bottom" constant="30" id="GmV-6a-OP6"/>
+                            <constraint firstItem="9u4-Kx-JzA" firstAttribute="trailing" secondItem="J8Y-H1-SAf" secondAttribute="trailing" id="K9f-mV-Q0g"/>
+                            <constraint firstItem="G3J-H6-1N3" firstAttribute="centerX" secondItem="paz-9u-JmB" secondAttribute="centerX" id="fTl-sG-sO1"/>
+                            <constraint firstItem="9u4-Kx-JzA" firstAttribute="trailing" secondItem="oon-fD-UQG" secondAttribute="trailing" constant="20" id="iI4-qU-oL8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9u4-Kx-JzA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kOv-Ga-3WZ"/>
+                    <connections>
+                        <outlet property="recipeImage" destination="J8Y-H1-SAf" id="W8d-r6-6rf"/>
+                        <outlet property="recipeInstructions" destination="oon-fD-UQG" id="2Vf-7w-JMj"/>
+                        <outlet property="recipeTitle" destination="G3J-H6-1N3" id="dw2-fJ-PIq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9z-4X-eKC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2673.913043478261" y="99.776785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IwS-RT-Hwd">
@@ -158,5 +210,6 @@
     <resources>
         <image name="burger0" width="1052" height="699"/>
         <image name="burger2" width="635" height="948"/>
+        <image name="pasta1" width="676" height="900"/>
     </resources>
 </document>
